@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RY AUTO</title>
+    <title>{% block title %}{% endblock title %}</title>
       {% comment %} bootstrap {% endcomment %}
       <link rel="stylesheet" href=" {% static '\bootstrap\css\bootstrap.min.css' %}">
       {% comment %} css {% endcomment %}
@@ -11,6 +11,12 @@
 </head>
 
 <body>
+
+
+
+
     
+    {% comment %} js for bootstrap {% endcomment %}
+    <script src="{% static 'bootstrap\js\bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>
